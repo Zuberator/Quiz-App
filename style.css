@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ececec;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+#answers {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: inherit;
+  gap: 2rem;
+}
+
+.answer {
+  cursor: pointer;
+  background: #ececec;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.answer:hover {
+  box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
